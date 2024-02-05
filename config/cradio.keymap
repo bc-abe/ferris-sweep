@@ -43,45 +43,45 @@
 
         default_layer {
             bindings = <
-&kp X       &kp F       &kp L        &mt GRAVE C  &kp W                         &mt PLUS MINUS        &kp U                 &kp I               &kp Y                       &mt K Q
-&hm LGUI R  &hm LALT S  &hm LCTRL N  &hm LSHFT D  &mt NON_US_BACKSLASH B        &mt PIPE COMMA        &hm RSHFT A           &hm RCTRL E         &hm LALT L                  &hm LGUI H
 &mt Z J     &kp G       &kp M        &mt TILDE P  &kp V                         &mt COLON SEMICOLON   &mt AMPERSAND PERIOD  &mt ASTERISK SLASH  &mt QUESTION DOUBLE_QUOTES  &mt SQT EXCLAMATION
+&hm LGUI R  &hm LALT S  &hm LCTRL N  &hm LSHFT D  &mt NON_US_BACKSLASH B        &mt PIPE COMMA        &hm RSHFT A           &hm RCTRL E         &hm LALT L                  &hm LGUI H
+&kp X       &kp F       &kp L        &mt GRAVE C  &kp W                         &mt PLUS MINUS        &kp U                 &kp I               &kp Y                       &mt K Q
                                      &to 1        &mt LA(RS(LEFT_CONTROL)) T    &mt LEFT_SHIFT SPACE  &to 2
             >;
         };
 
         nav_layer {
             bindings = <
-&trans   &trans      &trans         &trans     &trans       &trans               &trans                    &trans                &trans               &trans
-&kp TAB  &kp DELETE  &kp BACKSPACE  &kp ENTER  &trans       &mt HOME LEFT_ARROW  &mt PAGE_DOWN DOWN_ARROW  &mt PAGE_UP UP_ARROW  &mt END RIGHT_ARROW  &kp RARW
 &trans   &trans      &trans         &trans     &trans       &kp C_VOLUME_UP      &kp C_VOL_DN              &kp C_BRI_UP          &kp C_BRI_DEC        &kp END
+&kp TAB  &kp DELETE  &kp BACKSPACE  &kp ENTER  &trans       &mt HOME LEFT_ARROW  &mt PAGE_DOWN DOWN_ARROW  &mt PAGE_UP UP_ARROW  &mt END RIGHT_ARROW  &kp RARW
+&trans   &trans      &trans         &trans     &trans       &trans               &trans                    &trans                &trans               &trans
                                     &to 0      &mt INS T    &kp ESC              &trans
             >;
         };
 
         command_layer {
             bindings = <
-&kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp F11         &kp F12       &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN
-&kt NUMBER_1   &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4          &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7           &kp N8             &kp NUMBER_9     &kp NUMBER_0
 &kp F1         &kp F2          &mt LA(F3) F3     &mt LA(F4) F4         &kp F5          &kp F6        &kp F7                 &kp F8             &kp F9           &kp F10
+&kt NUMBER_1   &kp NUMBER_2    &kp NUMBER_3      &kp NUMBER_4          &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7           &kp N8             &kp NUMBER_9     &kp NUMBER_0
+&kp LESS_THAN  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp F11         &kp F12       &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GREATER_THAN
                                                  &to 0                 &trans          &trans        &trans
             >;
         };
 
         num_layer {
             bindings = <
-&kp LBKT   &kp N7  &kp N8  &kp N9  &kp RBKT     &trans  &trans  &trans  &trans  &trans
-&kp SEMI   &kp N4  &kp N5  &kp N6  &kp EQUAL    &trans  &trans  &trans  &trans  &trans
 &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp BSLH     &trans  &trans  &trans  &trans  &trans
+&kp SEMI   &kp N4  &kp N5  &kp N6  &kp EQUAL    &trans  &trans  &trans  &trans  &trans
+&kp LBKT   &kp N7  &kp N8  &kp N9  &kp RBKT     &trans  &trans  &trans  &trans  &trans
                            &kp N0  &kp MINUS    &trans  &trans
             >;
         };
 
         sym_layer {
             bindings = <
-&kp LBRC   &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp RBRC        &bt BT_CLR  &trans        &trans        &trans        &sys_reset
-&kp COLON  &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &kp PLUS        &trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans
 &kp TILDE  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(BSLH)    &trans      &trans        &trans        &trans        &trans
+&kp COLON  &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &kp PLUS        &trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans
+&kp LBRC   &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp RBRC        &bt BT_CLR  &trans        &trans        &trans        &sys_reset
                                    &to 0       &kp UNDER       &trans      &trans
             >;
         };
