@@ -17,6 +17,11 @@
 
 &lt { quick_tap_ms = <200>; };
 
+&mt {
+  flavor = "tap-preferred";
+  tapping_term_ms = <285>;
+ };
+
 / {
     behaviors {
         hm: homerow_mods {
