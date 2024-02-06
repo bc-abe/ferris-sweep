@@ -63,8 +63,8 @@
         default_layer {
             bindings = <
 &mt Z J     &kp G       &kp M        &mt TILDE P           &kp V                         &mt COLON SEMICOLON               &mt AMPERSAND PERIOD  &mt ASTERISK SLASH  &mt QUESTION DOUBLE_QUOTES  &mt SQT EXCLAMATION
-&hm LGUI R  &hm LALT S  &hm LCTRL N  &hm LSHFT D           &mt NON_US_BACKSLASH B        &mt PIPE COMMA                    &hm RSHFT A           &hm RCTRL E         &hm LALT L                  &hm LGUI H
-&kp X       &kp F       &kp L        &mt GRAVE C           &kp W                         &mt PLUS MINUS                    &kp U                 &kp I               &kp Y                       &mt K Q
+&hm LGUI R  &hm LALT S  &hm LCTRL N  &hm LSHFT D           &mt NON_US_BACKSLASH B        &mt PIPE COMMA                    &hm RSHFT A           &hm RCTRL E         &hm LALT I                  &hm LGUI H
+&kp X       &kp F       &kp L        &mt GRAVE C           &kp W                         &mt PLUS MINUS                    &kp U                 &kp O               &kp Y                       &mt K Q
                                      &mt ESCAPE BACKSPACE  &mt LA(RS(LEFT_CONTROL)) T    &mt LC(LA(LG(LEFT_SHIFT))) SPACE  &kp ENTER
             >;
         };
