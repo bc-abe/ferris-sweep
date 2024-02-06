@@ -18,9 +18,9 @@
 &lt { quick_tap_ms = <200>; };
 
 &mt {
-  flavor = "tap-preferred";
-  tapping_term_ms = <285>;
- };
+    flavor = "tap-preferred";
+    tapping_term_ms = <285>;
+};
 
 / {
     behaviors {
@@ -36,14 +36,24 @@
     combos {
         compatible = "zmk,combos";
 
-        to-reset {
-            bindings = <&to 3>;
-            key-positions = <31 32>;
-        };
-
         to-zero {
             bindings = <&to 0>;
-            key-positions = <30 31>;
+            key-positions = <31 13>;
+        };
+
+        to-one {
+            bindings = <&to 1>;
+            key-positions = <31 12>;
+        };
+
+        to-two {
+            bindings = <&to 2>;
+            key-positions = <16 32>;
+        };
+
+        to-three {
+            bindings = <&to 3>;
+            key-positions = <32 17>;
         };
     };
 
@@ -52,19 +62,19 @@
 
         default_layer {
             bindings = <
-&mt Z J     &kp G       &kp M        &mt TILDE P  &kp V                         &mt COLON SEMICOLON   &mt AMPERSAND PERIOD  &mt ASTERISK SLASH  &mt QUESTION DOUBLE_QUOTES  &mt SQT EXCLAMATION
-&hm LGUI R  &hm LALT S  &hm LCTRL N  &hm LSHFT D  &mt NON_US_BACKSLASH B        &mt PIPE COMMA        &hm RSHFT A           &hm RCTRL E         &hm LALT L                  &hm LGUI H
-&kp X       &kp F       &kp L        &mt GRAVE C  &kp W                         &mt PLUS MINUS        &kp U                 &kp I               &kp Y                       &mt K Q
-                                     &to 1        &mt LA(RS(LEFT_CONTROL)) T    &mt LEFT_SHIFT SPACE  &to 2
+&mt Z J     &kp G       &kp M        &mt TILDE P           &kp V                         &mt COLON SEMICOLON               &mt AMPERSAND PERIOD  &mt ASTERISK SLASH  &mt QUESTION DOUBLE_QUOTES  &mt SQT EXCLAMATION
+&hm LGUI R  &hm LALT S  &hm LCTRL N  &hm LSHFT D           &mt NON_US_BACKSLASH B        &mt PIPE COMMA                    &hm RSHFT A           &hm RCTRL E         &hm LALT L                  &hm LGUI H
+&kp X       &kp F       &kp L        &mt GRAVE C           &kp W                         &mt PLUS MINUS                    &kp U                 &kp I               &kp Y                       &mt K Q
+                                     &mt ESCAPE BACKSPACE  &mt LA(RS(LEFT_CONTROL)) T    &mt LC(LA(LG(LEFT_SHIFT))) SPACE  &kp ENTER
             >;
         };
 
         nav_layer {
             bindings = <
-&trans   &trans      &trans         &trans     &trans    &kp C_VOLUME_UP      &kp C_VOL_DN              &kp C_BRI_UP          &kp C_BRI_DEC        &kp END
-&kp TAB  &kp DELETE  &kp BACKSPACE  &kp ENTER  &trans    &mt HOME LEFT_ARROW  &mt PAGE_DOWN DOWN_ARROW  &mt PAGE_UP UP_ARROW  &mt END RIGHT_ARROW  &kp RARW
-&trans   &trans      &trans         &trans     &trans    &trans               &trans                    &trans                &trans               &trans
-                                    &trans     &trans    &trans               &trans
+&trans   &trans      &kp PRINTSCREEN  &kp LS(INS)  &trans    &kp C_VOLUME_UP      &kp C_VOL_DN              &kp C_BRI_UP          &kp C_BRI_DEC        &kp END
+&kp TAB  &kp DELETE  &kp BACKSPACE    &kp ENTER    &trans    &mt HOME LEFT_ARROW  &mt PAGE_DOWN DOWN_ARROW  &mt PAGE_UP UP_ARROW  &mt END RIGHT_ARROW  &kp RARW
+&trans   &trans      &trans           &trans       &trans    &trans               &trans                    &trans                &trans               &trans
+                                      &trans       &trans    &trans               &trans
             >;
         };
 
