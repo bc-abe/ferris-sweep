@@ -72,7 +72,7 @@
 
         qwerty_layer {
             bindings = <
-&mt PLUS Q  &mt UNDER W  &mt MINUS E  &mt TILDE R           &mt EQUAL T                           &mt HASH Y                        &mt U AMPERSAND  &mt SQT I       &mt DOUBLE_QUOTES O   &mt SQT P
+&mt PLUS Q  &mt UNDER W  &mt MINUS E  &mt TILDE R           &mt EQUAL T                           &mt HASH Y                        &mt AMPERSAND U  &mt SQT I       &mt DOUBLE_QUOTES O   &mt SQT P
 &hm LGUI A  &hm LALT S   &hm LCTRL D  &hm LSHFT F           &mt NON_US_BACKSLASH G                &mt ASTERISK H                    &hm RSHFT J      &hm RCTRL K     &hm LALT L            &hm LGUI SEMI
 &kp Z       &kp X        &kp C        &mt GRAVE V           &mt LESS_THAN B                       &mt GREATER_THAN N                &kp M            &mt PIPE COMMA  &mt AMPERSAND PERIOD  &mt QUESTION SLASH
                                       &mt ESCAPE BACKSPACE  &mt LA(RS(LEFT_CONTROL)) BACKSPACE    &mt LC(LA(LG(LEFT_SHIFT))) SPACE  &kp ENTER
