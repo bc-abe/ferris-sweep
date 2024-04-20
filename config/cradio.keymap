@@ -38,32 +38,32 @@
 
         to-qwty {
             bindings = <&to 0>;
-            key-positions = <13 14>;
+            key-positions = <13 12>;
         };
 
         to-qwty1 {
             bindings = <&to 0>;
-            key-positions = <15 16>;
+            key-positions = <16 17>;
         };
 
         to-nav {
             bindings = <&to 2>;
-            key-positions = <15 17>;
+            key-positions = <16 18>;
         };
 
         to-command {
             bindings = <&to 3>;
-            key-positions = <14 12>;
+            key-positions = <13 11>;
         };
 
         to-4 {
             bindings = <&to 4>;
-            key-positions = <13 11>;
+            key-positions = <13 10>;
         };
 
         to-colemak {
             bindings = <&to 1>;
-            key-positions = <13 10>;
+            key-positions = <16 19>;
         };
     };
 
@@ -90,14 +90,14 @@
 
         nav_layer {
             bindings = <
-&trans   &trans      &kp PRINTSCREEN  &kp LS(INS)  &trans    &kp C_VOLUME_UP      &kp C_VOL_DN              &kp C_BRI_UP          &kp C_BRI_DEC        &kp END
-&kp TAB  &kp DELETE  &kp BACKSPACE    &kp ENTER    &trans    &mt HOME LEFT_ARROW  &mt PAGE_DOWN DOWN_ARROW  &mt PAGE_UP UP_ARROW  &mt END RIGHT_ARROW  &kp RARW
-&trans   &trans      &trans           &trans       &trans    &trans               &trans                    &trans                &trans               &trans
-                                      &trans       &trans    &trans               &trans
+&trans  &trans  &kp PRINTSCREEN  &kp LS(INS)  &trans    &kp C_VOLUME_UP  &kp C_VOL_DN               &kp C_BRI_UP               &kp C_BRI_DEC             &kp END
+&trans  &trans  &trans           &trans       &trans    &kp LEFT_ARROW   &mt LEFT_SHIFT DOWN_ARROW  &mt LEFT_CONTROL UP_ARROW  &mt LEFT_ALT RIGHT_ARROW  &mt LEFT_SHIFT TILDE
+&trans  &trans  &trans           &trans       &trans    &kp HOME         &kp PAGE_DOWN              &kp PAGE_UP                &kp END                   &trans
+                                 &trans       &trans    &trans           &trans
             >;
         };
 
-        command_layer {
+        num-sym_layer {
             bindings = <
 &kp F1                 &kp F2                 &mt LA(F3) F3       &mt LA(F4) F4            &kp F5          &kp F6        &kp F7                   &kp F8                     &kp F9           &kp F10
 &mt LEFT_GUI NUMBER_1  &mt LEFT_ALT NUMBER_2  &mt RCTRL NUMBER_3  &mt LEFT_SHIFT NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &mt LEFT_SHIFT NUMBER_7  &mt LEFT_CONTROL NUMBER_8  &mt LEFT_ALT N9  &mt LEFT_GUI N0
