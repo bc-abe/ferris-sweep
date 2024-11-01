@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 
 #define NAV_L 1
 #define OTHER_L 2
@@ -36,73 +37,81 @@
     combos {
         compatible = "zmk,combos";
 
-        to-qwty {
+        colmak-0 {
             bindings = <&to 0>;
             key-positions = <13 12>;
         };
 
-        to-qwty1 {
+        colemak-1 {
             bindings = <&to 0>;
             key-positions = <16 17>;
         };
 
         to-nav {
-            bindings = <&to 2>;
+            bindings = <&to 1>;
             key-positions = <16 18>;
         };
 
         to-command {
-            bindings = <&to 3>;
+            bindings = <&to 6>;
             key-positions = <13 11>;
-        };
-
-        to-4 {
-            bindings = <&to 4>;
-            key-positions = <13 10>;
-        };
-
-        to-colemak {
-            bindings = <&to 1>;
-            key-positions = <16 19>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty_layer {
+        colemak_layer {
             bindings = <
-&mt PLUS Q  &mt UNDER W  &mt MINUS E  &mt TILDE R           &mt EQUAL T                           &mt HASH Y                        &mt AMPERSAND U  &mt SQT I       &mt DOUBLE_QUOTES O   &mt SQT P
-&hm LGUI A  &hm LALT S   &hm LCTRL D  &hm LSHFT F           &mt NON_US_BACKSLASH G                &mt ASTERISK H                    &hm RSHFT J      &hm RCTRL K     &hm LALT L            &hm LGUI SEMI
-&mt TAB Z   &kp X        &kp C        &mt GRAVE V           &mt LESS_THAN B                       &mt GREATER_THAN N                &kp M            &mt PIPE COMMA  &mt AMPERSAND PERIOD  &mt QUESTION SLASH
-                                      &mt ESCAPE BACKSPACE  &mt LA(RS(LEFT_CONTROL)) BACKSPACE    &mt LC(LA(LG(LEFT_SHIFT))) SPACE  &kp ENTER
+&mt PLUS Q  &mt UNDER W  &mt MINUS F  &mt TILDE P  &mt EQUAL B               &mt HASH J          &mt AMPERSAND L  &mt SQT U       &mt DOUBLE_QUOTES Y   &mt SQT COLON
+&hm LGUI A  &hm LALT R   &hm LCTRL S  &hm LSHFT T  &mt NON_US_BACKSLASH G    &mt ASTERISK M      &hm RSHFT N      &hm RCTRL E     &hm LALT I            &hm LGUI O
+&kp Z       &kp X        &kp C        &mt GRAVE D  &mt LESS_THAN V           &mt GREATER_THAN K  &kp H            &mt PIPE COMMA  &mt AMPERSAND PERIOD  &mt QUESTION SLASH
+                                      &mo 2        &mo 3                     &mo 4               &mo 5
             >;
         };
 
-        colemak_layer {
+        qwerty_layer {
             bindings = <
-&mt PLUS Q  &mt UNDER W  &mt MINUS F  &mt TILDE P           &mt EQUAL B                           &mt HASH J                        &mt AMPERSAND L  &mt SQT U       &mt DOUBLE_QUOTES Y   &mt SQT COLON
-&hm LGUI A  &hm LALT R   &hm LCTRL S  &hm LSHFT T           &mt NON_US_BACKSLASH G                &mt ASTERISK M                    &hm RSHFT N      &hm RCTRL E     &hm LALT I            &hm LGUI O
-&kp Z       &kp X        &kp C        &mt GRAVE D           &mt LESS_THAN V                       &mt GREATER_THAN K                &kp H            &mt PIPE COMMA  &mt AMPERSAND PERIOD  &mt QUESTION SLASH
-                                      &mt ESCAPE BACKSPACE  &mt LA(RS(LEFT_CONTROL)) BACKSPACE    &mt LC(LA(LG(LEFT_SHIFT))) SPACE  &kp ENTER
+&mt PLUS Q  &mt UNDER W  &mt MINUS E  &mt TILDE R  &mt EQUAL T               &mt HASH Y          &mt AMPERSAND U  &mt SQT I       &mt DOUBLE_QUOTES O   &mt SQT P
+&hm LGUI A  &hm LALT S   &hm LCTRL D  &hm LSHFT F  &mt NON_US_BACKSLASH G    &mt ASTERISK H      &hm RSHFT J      &hm RCTRL K     &hm LALT L            &hm LGUI SEMI
+&mt TAB Z   &kp X        &kp C        &mt GRAVE V  &mt LESS_THAN B           &mt GREATER_THAN N  &kp M            &mt PIPE COMMA  &mt AMPERSAND PERIOD  &mt QUESTION SLASH
+                                      &mo 2        &mo 3                     &mo 4               &mo 5
             >;
         };
 
         nav_layer {
             bindings = <
-&trans  &trans  &kp PRINTSCREEN  &kp LS(INS)  &trans    &kp C_VOLUME_UP  &kp C_VOL_DN               &kp C_BRI_UP               &kp C_BRI_DEC             &kp END
+&trans  &trans  &kp PRINTSCREEN  &kp LS(INS)  &trans    &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC       &kp C_BRI_UP               &kp C_BRI_DEC             &kp END
 &trans  &trans  &trans           &trans       &trans    &kp LEFT_ARROW   &mt LEFT_SHIFT DOWN_ARROW  &mt LEFT_CONTROL UP_ARROW  &mt LEFT_ALT RIGHT_ARROW  &mt LEFT_SHIFT TILDE
-&trans  &trans  &trans           &trans       &trans    &kp HOME         &kp PAGE_DOWN              &kp PAGE_UP                &kp END                   &trans
+&trans  &trans  &trans           &trans       &trans    &kp C_VOL_DN     &kp C_BRIGHTNESS_DEC       &kp PAGE_UP                &kp END                   &trans
                                  &trans       &trans    &trans           &trans
             >;
         };
 
-        num-sym_layer {
+        num {
             bindings = <
-&kp F1                 &kp F2                 &mt LA(F3) F3       &mt LA(F4) F4            &kp F5          &kp F6        &kp F7                   &kp F8                     &kp F9           &kp F10
-&mt LEFT_GUI NUMBER_1  &mt LEFT_ALT NUMBER_2  &mt RCTRL NUMBER_3  &mt LEFT_SHIFT NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &mt LEFT_SHIFT NUMBER_7  &mt LEFT_CONTROL NUMBER_8  &mt LEFT_ALT N9  &mt LEFT_GUI N0
-&kp LESS_THAN          &kp LEFT_BRACE         &kp LEFT_BRACKET    &kp LEFT_PARENTHESIS     &kp F11         &kp F12       &kp RIGHT_PARENTHESIS    &kp RIGHT_BRACKET          &kp RIGHT_BRACE  &kp GREATER_THAN
-                                                                  &trans                   &trans          &trans        &trans
+&kp F1              &kp F2              &mt LA(F3) F3        &mt LA(F4) F4                 &kp F5      &kp F6   &kp F7                       &kp F8                     &kp F9           &kp F10
+&mt LEFT_GUI TILDE  &mt LEFT_ALT GRAVE  &mt RCTRL BACKSLASH  &mt LEFT_SHIFT DOUBLE_QUOTES  &kp HOME    &kp END  &mt LEFT_SHIFT SINGLE_QUOTE  &mt LEFT_CONTROL NUMBER_8  &mt LEFT_ALT N9  &mt LEFT_GUI N0
+&kp LESS_THAN       &kp LEFT_BRACE      &kp LEFT_BRACKET     &kp LEFT_PARENTHESIS          &kp F11     &kp F12  &kp RIGHT_PARENTHESIS        &kp RIGHT_BRACKET          &kp RIGHT_BRACE  &kp GREATER_THAN
+                                                             &trans                        &trans      &trans   &trans
+            >;
+        };
+
+        symbol {
+            bindings = <
+&kp EQUAL     &kp N7        &kp N8        &kp N9        &kp SLASH     &kp BACKSPACE   &kp DELETE  &kp TAB         &kp PAGE_UP    &kp LEFT_CONTROL
+&kt MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD    &kp LEFT_ARROW  &kp DOWN    &kp UP_ARROW    &kp RIGHT      &kp LEFT_ALT
+&kp ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0        &kp ENTER       &kp ESCAPE  &kp LEFT_SHIFT  &kp PAGE_DOWN  &kp LEFT_GUI
+                                          &trans        &trans        &trans          &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
             >;
         };
 
