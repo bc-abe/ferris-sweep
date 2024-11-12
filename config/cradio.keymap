@@ -65,7 +65,7 @@
             bindings = <
 &mt PLUS Q  &mt UNDER W  &mt MINUS F  &mt TILDE P  &mt EQUAL B               &mt HASH J          &mt AMPERSAND L  &mt SQT U       &mt DOUBLE_QUOTES Y   &mt SQT COLON
 &hm LGUI A  &hm LALT R   &hm LCTRL S  &hm LSHFT T  &mt NON_US_BACKSLASH G    &mt ASTERISK M      &hm RSHFT N      &hm RCTRL E     &hm LALT I            &hm LGUI O
-&kp Z       &kp X        &kp C        &mt GRAVE D  &mt LESS_THAN V           &mt GREATER_THAN K  &kp H            &mt PIPE COMMA  &mt AMPERSAND PERIOD  &mt QUESTION SLASH
+&kp Z       &kp X        &kp C        &kp D        &mt LESS_THAN V           &mt GREATER_THAN K  &kp H            &mt PIPE COMMA  &mt AMPERSAND PERIOD  &mt QUESTION SLASH
                                       &mo 2        &mo 3                     &lt 4 SPACE         &mo 5
             >;
         };
