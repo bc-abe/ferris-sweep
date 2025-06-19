@@ -71,27 +71,27 @@
         layer_1 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&hm A LEFT_GUI  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G    &kp H  &hm RSHFT J  &hm RCTRL K  &hm L LEFT_ALT  &hm LGUI SEMI
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+                                         &mo 2        &mo 3    &mo 4  &mo 5
             >;
         };
 
         layer_2 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans                  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &hm LEFT_CONTROL ENTER  &trans  &trans  &trans  &trans
+&hm A LEFT_GUI  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G    &kp H  &hm RSHFT J  &hm RCTRL K  &hm L LEFT_ALT  &hm LGUI SEMI
 &trans  &trans  &trans  &trans  &trans    &trans                  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans                  &trans
+                                         &mo 2        &mo 3    &mo 4  &mo 5
             >;
         };
 
         layer_3 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&hm A LEFT_GUI  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G    &kp H  &hm RSHFT J  &hm RCTRL K  &hm L LEFT_ALT  &hm LGUI SEMI
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+                                         &mo 2        &mo 3    &mo 4  &mo 5
             >;
         };
 
@@ -100,7 +100,7 @@
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
+                                         &mo 2        &mo 3    &mo 4  &mo 5
             >;
         };
     };
