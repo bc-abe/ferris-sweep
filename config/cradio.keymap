@@ -61,15 +61,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        colemak_layer {
-            bindings = <
-&mt PLUS Q  &mt UNDER W  &mt MINUS F  &mt TILDE P  &mt EQUAL B               &mt HASH J          &mt AMPERSAND L  &mt SQT U       &mt DOUBLE_QUOTES Y   &mt SQT COLON
-&hm LGUI A  &hm LALT R   &hm LCTRL S  &hm LSHFT T  &mt NON_US_BACKSLASH G    &mt ASTERISK M      &hm RSHFT N      &hm RCTRL E     &hm LALT I            &hm LGUI O
-&kp Z       &kp X        &kp C        &kp D        &mt LESS_THAN V           &mt GREATER_THAN K  &kp H            &mt PIPE COMMA  &mt AMPERSAND PERIOD  &mt QUESTION SLASH
-                                      &mo 2        &mo 3                     &lt 4 SPACE         &mo 5
-            >;
-        };
-
         qwerty_layer {
             bindings = <
 &mt PLUS Q  &mt UNDER W  &mt MINUS E  &mt TILDE R  &mt EQUAL T               &mt HASH Y          &mt AMPERSAND U  &mt SQT I       &mt DOUBLE_QUOTES O   &mt SQT P
@@ -79,49 +70,5 @@
             >;
         };
 
-        nav_layer {
-            bindings = <
-&trans  &trans  &kp PRINTSCREEN  &kp LS(INS)  &trans    &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC       &kp C_BRI_UP               &kp C_BRI_DEC             &kp END
-&trans  &trans  &trans           &trans       &trans    &kp LEFT_ARROW   &mt LEFT_SHIFT DOWN_ARROW  &mt LEFT_CONTROL UP_ARROW  &mt LEFT_ALT RIGHT_ARROW  &mt LEFT_SHIFT TILDE
-&trans  &trans  &trans           &trans       &trans    &kp C_VOL_DN     &kp C_BRIGHTNESS_DEC       &kp PAGE_UP                &kp END                   &trans
-                                 &trans       &trans    &trans           &trans
-            >;
-        };
-
-        num {
-            bindings = <
-&kp F1              &kp F2              &mt LA(F3) F3        &mt LA(F4) F4                 &kp F5      &kp F6   &kp F7                       &kp F8                     &kp F9           &kp F10
-&mt LEFT_GUI TILDE  &mt LEFT_ALT GRAVE  &mt RCTRL BACKSLASH  &mt LEFT_SHIFT DOUBLE_QUOTES  &kp HOME    &kp END  &mt LEFT_SHIFT SINGLE_QUOTE  &mt LEFT_CONTROL NUMBER_8  &mt LEFT_ALT N9  &mt LEFT_GUI N0
-&kp LESS_THAN       &kp LEFT_BRACE      &kp LEFT_BRACKET     &kp LEFT_PARENTHESIS          &kp F11     &kp F12  &kp RIGHT_PARENTHESIS        &kp RIGHT_BRACKET          &kp RIGHT_BRACE  &kp GREATER_THAN
-                                                             &trans                        &trans      &trans   &trans
-            >;
-        };
-
-        symbol {
-            bindings = <
-&kp EQUAL     &kp N7        &kp N8        &kp N9        &kp SLASH     &kp BACKSPACE   &kp DELETE  &kp TAB         &kp PAGE_UP    &kp LEFT_CONTROL
-&kt MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD    &kp LEFT_ARROW  &kp DOWN    &kp UP_ARROW    &kp RIGHT      &kp LEFT_ALT
-&kp ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0        &kp ENTER       &kp ESCAPE  &kp LEFT_SHIFT  &kp PAGE_DOWN  &kp LEFT_GUI
-                                          &trans        &trans        &trans          &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans    &trans  &trans
-            >;
-        };
-
-        sym_layer {
-            bindings = <
-&trans     &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(BSLH)    &trans      &trans        &trans        &trans        &trans
-&kp COLON  &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &kp PLUS        &trans      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans
-&kp LBRC   &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp RBRC        &bt BT_CLR  &trans        &trans        &trans        &sys_reset
-                                   &trans      &trans          &trans      &trans
-            >;
-        };
     };
 };
