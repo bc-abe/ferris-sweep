@@ -60,17 +60,17 @@
 
         layer_1 {
             bindings = <
-&trans     &trans      &trans       &trans            &trans    &trans  &trans           &trans       &trans        &trans
-&hm A TAB  &hm LALT S  &hm LCTRL D  &hm LSHFT ESCAPE  &kp G     &kp H   &hm RSHFT SPACE  &hm RCTRL K  &hm L DELETE  &hm LGUI BACKSPACE
-&trans     &trans      &trans       &trans            &trans    &trans  &trans           &trans       &trans        &trans
-                                    &trans            &trans    &trans  &trans
+&trans     &trans          &trans       &trans            &trans    &trans  &trans           &trans       &trans        &trans
+&hm TAB A  &hm LEFT_ALT S  &hm LCTRL D  &hm LSHFT ESCAPE  &kp G     &kp H   &hm RSHFT SPACE  &hm RCTRL K  &hm L DELETE  &hm LGUI BACKSPACE
+&trans     &trans          &trans       &trans            &trans    &trans  &trans           &trans       &trans        &trans
+                                        &trans            &trans    &trans  &trans
             >;
         };
 
         layer_2 {
             bindings = <
 &trans          &trans      &trans       &trans       &trans    &kp C_VOLUME_UP  &kp DQT         &kp SQT         &kp EQUAL   &kp PLUS
-&hm A LEFT_GUI  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G     &kp LEFT         &hm RSHFT DOWN  &hm UP K        &hm L DOWN  &hm LGUI SEMI
+&hm LEFT_GUI A  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G     &kp LEFT         &hm RSHFT DOWN  &hm UP K        &hm DOWN L  &hm LGUI SEMI
 &trans          &trans      &trans       &trans       &trans    &kp C_VOL_DN     &kp MINUS       &kp UNDERSCORE  &trans      &trans
                                          &trans       &trans    &trans           &trans
             >;
@@ -79,7 +79,7 @@
         layer_3 {
             bindings = <
 &trans          &kp N7       &kp N8        &kp N9    &trans    &trans  &kp F7        &kp F8        &kp F9    &trans
-&hm A LEFT_GUI  &hm LALT N4  &hm LCTRL N5  &hm N6 F  &kp G     &kp H   &hm RSHFT F4  &hm RCTRL F5  &hm L F6  &hm LGUI SEMI
+&hm LEFT_GUI A  &hm LALT N4  &hm LCTRL N5  &hm N6 F  &kp G     &kp H   &hm RSHFT F4  &hm RCTRL F5  &hm L F6  &hm LGUI SEMI
 &trans          &kp N1       &kp N2        &kp N3    &kp N0    &trans  &kp F1        &kp F2        &kp F3    &trans
                                            &trans    &trans    &trans  &trans
             >;
