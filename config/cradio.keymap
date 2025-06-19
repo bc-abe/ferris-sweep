@@ -64,34 +64,34 @@
 &kp Q           &kp W       &kp E        &kp R        &kp T    &kp Y  &kp U        &kp I        &kp O           &kp P
 &hm A LEFT_GUI  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G    &kp H  &hm RSHFT J  &hm RCTRL K  &hm L LEFT_ALT  &hm LGUI SEMI
 &kp Z           &kp X       &kp C        &kp V        &kp B    &kp N  &kp M        &kp COMMA    &kp PERIOD      &kp SLASH
-                                         &mo 2        &mo 3    &mo 4  &mo 5
+                                         &mo 3        &mo 4    &mo 1  &mo 2
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&hm A LEFT_GUI  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G    &kp H  &hm RSHFT J  &hm RCTRL K  &hm L LEFT_ALT  &hm LGUI SEMI
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                                         &mo 2        &mo 3    &mo 4  &mo 5
+&trans     &trans      &trans       &trans            &trans    &trans  &trans           &trans       &trans        &trans
+&hm A TAB  &hm LALT S  &hm LCTRL D  &hm LSHFT ESCAPE  &kp G     &kp H   &hm RSHFT SPACE  &hm RCTRL K  &hm L DELETE  &hm LGUI BACKSPACE
+&trans     &trans      &trans       &trans            &trans    &trans  &trans           &trans       &trans        &trans
+                                    &mo 2             &mo 3     &mo 4   &mo 5
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans                  &trans  &trans  &trans  &trans
-&hm A LEFT_GUI  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G    &kp H  &hm RSHFT J  &hm RCTRL K  &hm L LEFT_ALT  &hm LGUI SEMI
-&trans  &trans  &trans  &trans  &trans    &trans                  &trans  &trans  &trans  &trans
-                                         &mo 2        &mo 3    &mo 4  &mo 5
+&trans          &trans      &trans       &trans       &trans    &trans    &trans          &trans    &trans      &trans
+&hm A LEFT_GUI  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G     &kp LEFT  &hm RSHFT DOWN  &hm UP K  &hm L DOWN  &hm LGUI SEMI
+&trans          &trans      &trans       &trans       &trans    &trans    &trans          &trans    &trans      &trans
+                                         &mo 2        &mo 3     &mo 4     &mo 5
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&hm A LEFT_GUI  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G    &kp H  &hm RSHFT J  &hm RCTRL K  &hm L LEFT_ALT  &hm LGUI SEMI
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                                         &mo 2        &mo 3    &mo 4  &mo 5
+&trans          &trans      &trans       &trans       &trans    &trans  &trans       &trans       &trans          &trans
+&hm A LEFT_GUI  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G     &kp H   &hm RSHFT J  &hm RCTRL K  &hm L LEFT_ALT  &hm LGUI SEMI
+&trans          &kp N1      &trans       &trans       &trans    &trans  &trans       &trans       &trans          &trans
+                                         &mo 2        &mo 3     &mo 4   &mo 5
             >;
         };
 
@@ -100,7 +100,7 @@
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                                         &mo 2        &mo 3    &mo 4  &mo 5
+                        &mo 2   &mo 3     &mo 4   &mo 5
             >;
         };
     };
