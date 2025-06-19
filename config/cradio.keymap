@@ -35,24 +35,14 @@
     combos {
         compatible = "zmk,combos";
 
-        colmak-0 {
-            bindings = <&to 0>;
-            key-positions = <13 12>;
+        to-layer-5 {
+            bindings = <&mo 5>;
+            key-positions = <32 33>;
         };
 
-        colemak-1 {
-            bindings = <&to 0>;
-            key-positions = <16 17>;
-        };
-
-        to-nav {
-            bindings = <&to 1>;
-            key-positions = <16 18>;
-        };
-
-        to-command {
-            bindings = <&to 6>;
-            key-positions = <13 11>;
+        to-layer-6 {
+            bindings = <&mo 6>;
+            key-positions = <31 30>;
         };
     };
 
@@ -73,16 +63,16 @@
 &trans     &trans      &trans       &trans            &trans    &trans  &trans           &trans       &trans        &trans
 &hm A TAB  &hm LALT S  &hm LCTRL D  &hm LSHFT ESCAPE  &kp G     &kp H   &hm RSHFT SPACE  &hm RCTRL K  &hm L DELETE  &hm LGUI BACKSPACE
 &trans     &trans      &trans       &trans            &trans    &trans  &trans           &trans       &trans        &trans
-                                    &mo 2             &mo 3     &mo 4   &mo 5
+                                    &trans            &trans    &trans  &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans          &trans      &trans       &trans       &trans    &trans    &trans          &trans    &trans      &trans
-&hm A LEFT_GUI  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G     &kp LEFT  &hm RSHFT DOWN  &hm UP K  &hm L DOWN  &hm LGUI SEMI
-&trans          &trans      &trans       &trans       &trans    &trans    &trans          &trans    &trans      &trans
-                                         &mo 2        &mo 3     &mo 4     &mo 5
+&trans          &trans      &trans       &trans       &trans    &kp C_VOLUME_UP  &kp DQT         &kp SQT         &kp EQUAL   &kp PLUS
+&hm A LEFT_GUI  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G     &kp LEFT         &hm RSHFT DOWN  &hm UP K        &hm L DOWN  &hm LGUI SEMI
+&trans          &trans      &trans       &trans       &trans    &kp C_VOL_DN     &kp MINUS       &kp UNDERSCORE  &trans      &trans
+                                         &trans       &trans    &trans           &trans
             >;
         };
 
@@ -91,24 +81,24 @@
 &trans          &kp N7       &kp N8        &kp N9    &trans    &trans  &kp F7        &kp F8        &kp F9    &trans
 &hm A LEFT_GUI  &hm LALT N4  &hm LCTRL N5  &hm N6 F  &kp G     &kp H   &hm RSHFT F4  &hm RCTRL F5  &hm L F6  &hm LGUI SEMI
 &trans          &kp N1       &kp N2        &kp N3    &kp N0    &trans  &kp F1        &kp F2        &kp F3    &trans
-                                           &mo 2     &mo 3     &mo 4   &mo 5
+                                           &trans    &trans    &trans  &trans
             >;
         };
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                        &mo 2   &mo 3     &mo 4   &mo 5
+&trans   &trans         &trans       &trans    &kp C_BRIGHTNESS_INC    &trans  &trans  &trans  &trans  &trans
+&kp END  &kp PAGE_DOWN  &kp PAGE_UP  &kp HOME  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans   &trans         &trans       &trans    &kp C_BRIGHTNESS_DEC    &trans  &trans  &trans  &trans  &trans
+                                     &trans    &trans                  &trans  &trans
             >;
         };
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &kp PIPE       &kp BSLH  &kp GRAVE  &kp TILDE
+&trans  &trans  &trans  &trans  &trans    &trans  &kp LPAR       &kp RPAR  &kp LBKT   &kp RBKT
+&trans  &trans  &trans  &trans  &trans    &trans  &kp LESS_THAN  &kp GT    &kp LBRC   &kp RIGHT_BRACE
                         &trans  &trans    &trans  &trans
             >;
         };
