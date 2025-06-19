@@ -63,9 +63,9 @@
 
         qwerty_layer {
             bindings = <
-&mt PLUS Q  &mt UNDER W  &mt MINUS E  &mt TILDE R  &mt EQUAL T               &mt HASH Y          &mt AMPERSAND U  &mt SQT I       &mt DOUBLE_QUOTES O   &mt SQT P
-&hm LGUI A  &hm LALT S   &hm LCTRL D  &hm LSHFT F  &mt NON_US_BACKSLASH G    &mt ASTERISK H      &hm RSHFT J      &hm RCTRL K     &hm LALT L            &hm LGUI SEMI
-&mt TAB Z   &kp X        &kp C        &mt GRAVE V  &mt LESS_THAN B           &mt GREATER_THAN N  &kp M            &mt PIPE COMMA  &mt AMPERSAND PERIOD  &mt QUESTION SLASH
+&kp Q  &kp UNDER W  &kp E  &kp R  &kp T               &kp  Y          &kp  U  &kp I       &kp  O   &kp  P
+&hm A  &hm LALT S   &hm LCTRL D  &hm LSHFT F  &kp G    &kp  H      &hm RSHFT J      &hm RCTRL K     &hm  L            &hm LGUI SEMI
+&kp Z  &kp X        &kp C        &kp V  &kp B           &kp  N  &kp M            &kp COMMA  &kp  PERIOD  &kp SLASH
                                       &mo 2        &mo 3                     &mo 4               &mo 5
             >;
         };
