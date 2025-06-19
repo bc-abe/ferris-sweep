@@ -5,8 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define NAV_L 1
@@ -63,12 +61,47 @@
 
         qwerty_layer {
             bindings = <
-&kp Q  &kp UNDER W  &kp E  &kp R  &kp T               &kp  Y          &kp  U  &kp I       &kp  O   &kp  P
-&hm A  &hm LALT S   &hm LCTRL D  &hm LSHFT F  &kp G    &kp  H      &hm RSHFT J      &hm RCTRL K     &hm  L            &hm LGUI SEMI
-&kp Z  &kp X        &kp C        &kp V  &kp B           &kp  N  &kp M            &kp COMMA  &kp  PERIOD  &kp SLASH
-                                      &mo 2        &mo 3                     &mo 4               &mo 5
+&kp Q           &kp W       &kp E        &kp R        &kp T    &kp Y  &kp U        &kp I        &kp O           &kp P
+&hm A LEFT_GUI  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G    &kp H  &hm RSHFT J  &hm RCTRL K  &hm L LEFT_ALT  &hm LGUI SEMI
+&kp Z           &kp X       &kp C        &kp V        &kp B    &kp N  &kp M        &kp COMMA    &kp PERIOD      &kp SLASH
+                                         &mo 2        &mo 3    &mo 4  &mo 5
             >;
         };
 
+        layer_1 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans                  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &hm LEFT_CONTROL ENTER  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans                  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans                  &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
+            >;
+        };
     };
 };
