@@ -84,7 +84,7 @@
         layer_4 {
             bindings = <
 &bootloader  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans       &trans  &trans  &kt A   &trans    &trans  &trans  &trans  &trans  &trans
 &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                              &trans  &trans    &trans  &trans
             >;
