@@ -40,6 +40,11 @@
             bindings = <&mo 4>;
             key-positions = <16 19>;
         };
+
+        to_main {
+            bindings = <&to 0>;
+            key-positions = <16 17>;
+        };
     };
 
     keymap {
